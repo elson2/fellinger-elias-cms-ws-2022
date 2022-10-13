@@ -1,0 +1,48 @@
+@include breakpoint(0, $mobile) {
+    header {
+        font-family: 'Source Sans Pro', sans-serif;
+        background-image: url("../../images/aaron_1.jpg");
+        background-position: -50px 0px;
+        height: 558px;
+        padding: 1rem;
+        position: relative;
+
+        img {
+            width: 100%;
+        }
+
+        #aaronLogoLink {
+            text-decoration: none;
+            text-transform: uppercase;
+            color: white;
+            font-size: 16px;
+            font-weight: 600;
+
+            span {
+                font-weight: 300;
+                text-transform: capitalize;
+            }
+        }
+
+        #heroText{
+            color: #D5874C;
+            font-size: 38px;
+            font-weight: 300;
+            position: absolute;
+            right: 3rem;
+            bottom: 6rem;
+            h2{
+                margin-bottom: 1rem;
+            }
+            a{
+                padding: .5rem 1.5rem;
+                color: white;
+                border: 1px solid #F4A76C;
+                text-decoration: none;
+                font-size: 16px;
+                font-weight: 600;
+                text-transform: uppercase;
+            }
+        }
+    }
+}
