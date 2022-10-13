@@ -1,0 +1,111 @@
+@include breakpoint(0, $mobile) {
+    $circleSize: 115px;
+
+    #workshops {
+
+
+        .level {
+            background-color: #363636;
+            margin-bottom: 1rem;
+            position: relative;
+            padding: 0 1rem 30px 1rem;
+            height: auto;
+            .icon-circle {
+                margin-top: $circleSize * 0.8;
+                display: flex;
+                justify-content: center;
+                position: relative;
+
+                img {
+                    width: $circleSize;
+                    height: $circleSize;
+                    padding: 1.5rem;
+                    border-radius: 50%;
+                    background-color: #595959;
+                    margin-top: -$circleSize / 2;
+                    z-index: 1
+                }
+
+                p {
+                    position: absolute;
+                    top: 3px;
+                    right: calc(100vw / 2 - $circleSize + 18px);
+                    background-color: #D5D5D5;
+                    color: #D5874C;
+                    border-radius: 50%;
+                    width: 37px;
+                    height: 37px;
+                    margin-top: -$circleSize / 2 - 10px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 28px;
+                    font-weight: 600;
+                }
+            }
+
+            .quote-icon {
+                width: calc($circleSize - 3rem);
+            }
+
+            .apply {
+                //bug: small black lines because of transform near dark element
+                position: absolute;
+                z-index: 1;
+                top: 0;
+                right: 0;
+                writing-mode: vertical-rl;
+                transform: rotate(180deg);
+                white-space: nowrap;
+                display: inline-block;
+                overflow: visible;
+                background-color: #F7F7F7;
+                border: none;
+                padding: .5rem .3rem 1rem .5rem;
+                height: 100%;
+                font-size: 18px;
+                font-weight: 100;
+            }
+
+            h3{
+                color: #FFAD6E;
+                font-weight: 200;
+                font-size: 22px;
+                margin-top: 1rem;
+            }
+
+            .levelText{
+                margin-top: .5rem;
+                color: #FFFFFF;
+                font-size: 1rem;
+                font-weight: 300;
+                margin-bottom: 2rem;
+            }
+
+            .button{
+                padding: .5rem 1.5rem;
+                color: white;
+                border: 1px solid #F4A76C;
+                text-decoration: none;
+                font-size: 16px;
+                font-weight: 600;
+                text-transform: uppercase;
+            }
+
+            .quote-container{
+                margin-top: 1.5rem;
+                display: flex;
+                align-items: center;
+                position: relative;
+                flex-direction: column;
+                blockquote{
+                    margin-top: .5rem;
+                    color: #FFFFFF;
+                    font-weight: 200;
+                    font-size: 22px;
+                }
+            }
+        }
+    }
+
+}
