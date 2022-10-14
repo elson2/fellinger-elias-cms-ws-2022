@@ -456,7 +456,7 @@ footer a {
     padding: 1.5rem;
     border-radius: 50%;
     background-color: #595959;
-    margin-top: calc(115px / 2);
+    margin-top: calc(-115px / 2);
     z-index: 1;
   }
   #workshops .level .icon-circle p {
