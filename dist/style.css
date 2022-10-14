@@ -196,15 +196,6 @@ section {
     cursor: pointer;
     z-index: 20;
   }
-  #hamburger .line-1 {
-    top: 0;
-  }
-  #hamburger .line-2 {
-    top: 8px;
-  }
-  #hamburger .line-3 {
-    top: 16px;
-  }
   #hamburger [class^=line-] {
     background-color: #FFAD6E;
     width: 100%;
@@ -212,16 +203,23 @@ section {
     position: absolute;
     transition: transform 0.5s ease;
   }
+  #hamburger .line-1 {
+    top: 0;
+  }
+  #hamburger .line-3 {
+    top: 8px;
+    width: 80%;
+    right: 0;
+  }
   #hamburger.open .line-1 {
     transform: rotate(45deg);
     transform-origin: 0 0;
   }
-  #hamburger.open .line-2 {
-    display: none;
-  }
   #hamburger.open .line-3 {
     transform: rotate(-45deg) translate(11px, 5px);
     transform-origin: 0px 18px;
+    top: 16px;
+    width: 100%;
   }
   #hamburger.open + ul {
     transform: translateX(0%);

@@ -10,15 +10,7 @@
         background-color: transparent;
         cursor: pointer;
         z-index: 20;
-        .line-1{
-            top: 0;
-        }
-        .line-2{
-            top: 8px;
-        }
-        .line-3{
-            top: 16px;
-        }
+        
         [class^=line-] {
             background-color: #FFAD6E;
             width: 100%;
@@ -26,17 +18,25 @@
             position: absolute;
             transition: transform .5s ease;
         }
+        .line-1{
+            top: 0;
+        }
+        .line-3{
+            top: 8px;
+            width: 80%;
+            right: 0;
+        }
         &.open{
             .line-1 {
                 transform: rotate(45deg);
                 transform-origin: 0 0;
             }
-            .line-2{
-                display: none;
-            }
+            
             .line-3{
                 transform: rotate(-45deg) translate(11px, 5px); 
                 transform-origin: 0px 18px;
+                top: 16px;
+                width: 100%;
             }
         }
 
