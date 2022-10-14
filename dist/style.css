@@ -337,9 +337,6 @@ footer a {
   }
 }
 @media (min-width: 0rem) and (max-width: 37.4375rem) {
-  #news {
-    padding-top: 3rem;
-  }
   #news .articles {
     display: flex;
     flex-direction: column;
