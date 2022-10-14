@@ -3,7 +3,6 @@
 
     #workshops {
 
-
         .level {
             background-color: #363636;
             margin-bottom: 1rem;
@@ -11,7 +10,7 @@
             padding: 0 1rem 30px 1rem;
             height: auto;
             .icon-circle {
-                margin-top: $circleSize * 0.8;
+                margin-top: calc(#{$circleSize} * 0.8);
                 display: flex;
                 justify-content: center;
                 position: relative;
@@ -22,20 +21,20 @@
                     padding: 1.5rem;
                     border-radius: 50%;
                     background-color: #595959;
-                    margin-top: -$circleSize / 2;
+                    margin-top: calc(#{$circleSize} / 2);
                     z-index: 1
                 }
 
                 p {
                     position: absolute;
                     top: 3px;
-                    right: calc(100vw / 2 - $circleSize + 18px);
+                    right: calc(100vw / 2 - #{$circleSize} + 18px);
                     background-color: #D5D5D5;
                     color: #D5874C;
                     border-radius: 50%;
                     width: 37px;
                     height: 37px;
-                    margin-top: -$circleSize / 2 - 10px;
+                    margin-top: calc(-#{$circleSize} / 2 - 10px);
                     display: flex;
                     justify-content: center;
                     align-items: center;
@@ -45,7 +44,7 @@
             }
 
             .quote-icon {
-                width: calc($circleSize - 3rem);
+                width: calc(#{$circleSize} - 3rem);
             }
 
             .apply {
