@@ -3,20 +3,35 @@
   font-family: 'Source Sans Pro', sans-serif;
 }
 
-.super-headline{
-  font-size: 16px;
-  font-weight: 600;
-  color: #363636;
-}
-.super-headline + h2{
-  font-size: 28px;
-  font-weight: 00;
-  color: #D5874C;
-}
-.super-headline, .super-headline + h2{
-  margin-left: 1rem;
+@include breakpoint(0, $mobile) {
+  .super-headline{
+    font-size: 16px;
+    font-weight: 600;
+    color: #363636;
+  }
+  .super-headline + h2{
+    font-size: 28px;
+    font-weight: 300;
+    color: #D5874C;
+  }
+  .super-headline, .super-headline + h2{
+    margin-left: 1rem;
+  }
+  
+  section{
+    margin-top: 3.8rem;
+  }
 }
 
-section{
-  margin-top: 3.8rem;
+@include breakpoint($desktop) {
+  .super-headline{
+    font-size: 22px;
+    font-weight: 600;
+    color: #363636;
+  }
+  .super-headline + h2{
+    font-size: 68px;
+    font-weight: 200;
+    color: #D5874C;
+  } 
 }
