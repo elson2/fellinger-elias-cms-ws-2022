@@ -192,6 +192,9 @@ table {
     font-weight: 200;
     color: #D5874C;
   }
+  section {
+    margin-top: 15rem;
+  }
 }
 @media (min-width: 0rem) and (max-width: 37.4375rem) {
   #hamburger {
@@ -330,7 +333,7 @@ footer a {
     color: #d5874c;
     margin-left: 1rem;
   }
-  #about #text_about {
+  #about .text_about {
     font: normal normal 300 16px/29px Source Sans Pro;
     color: #363636;
     margin-left: 1rem;
@@ -344,6 +347,41 @@ footer a {
     text-transform: uppercase;
     font: normal normal 900 16px/29px Source Sans Pro;
     padding: 0.5rem 1rem;
+  }
+}
+@media (min-width: 37.5rem) {
+  #about {
+    display: flex;
+    flex-direction: row;
+    padding: 0 2rem;
+  }
+  #about img {
+    height: auto;
+    object-fit: cover;
+  }
+  #about div {
+    padding: 0 10rem 0 2rem;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+  }
+  #about div .text_about {
+    font-size: 22px;
+    font-weight: 300;
+    color: #363636;
+    padding-bottom: 1rem;
+    line-height: 1.5;
+    max-width: 70ch;
+  }
+  #about div a {
+    margin-top: 1rem;
+    padding: 0.8rem 1.5rem;
+    border: 1px solid #f4a76c;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: 600;
+    text-transform: uppercase;
+    width: fit-content;
   }
 }
 @media (min-width: 0rem) and (max-width: 37.4375rem) {
