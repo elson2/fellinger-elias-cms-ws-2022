@@ -38,15 +38,17 @@
 }
 
 @include breakpoint($desktop) {
-	#about{
+	#about {
 		display: flex;
 		flex-direction: row;
-		padding: 0 2rem;
+		background: #fff7f2 0% 0% no-repeat padding-box;
+		padding: 7rem 2rem 10rem;
+
 		img {
 			height: auto;
 			object-fit: cover;
 		}
-		div{
+		div {
 			padding: 0 10rem 0 2rem;
 			height: fit-content;
 			display: flex;
@@ -61,15 +63,14 @@
 			}
 			a {
 				margin-top: 1rem;
-				padding: .8rem 1.5rem;
+				padding: 0.8rem 1.5rem;
 				border: 1px solid #f4a76c;
 				text-decoration: none;
 				font-size: 22px;
 				font-weight: 600;
 				text-transform: uppercase;
 				width: fit-content;
-			}			
+			}
 		}
-		
 	}
 }

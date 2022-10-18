@@ -158,7 +158,9 @@ table {
   visibility: visible;
 }
 
-*, *:after, *:before {
+*,
+*:after,
+*:before {
   box-sizing: border-box;
   font-family: "Source Sans Pro", sans-serif;
 }
@@ -172,9 +174,10 @@ table {
   .super-headline + h2 {
     font-size: 28px;
     font-weight: 300;
-    color: #D5874C;
+    color: #d5874c;
   }
-  .super-headline, .super-headline + h2 {
+  .super-headline,
+.super-headline + h2 {
     margin-left: 1rem;
   }
   section {
@@ -190,10 +193,16 @@ table {
   .super-headline + h2 {
     font-size: 68px;
     font-weight: 200;
-    color: #D5874C;
+    color: #d5874c;
   }
   section {
-    margin-top: 15rem;
+    margin-top: 5rem;
+  }
+}
+@media (min-width: 37.5rem) {
+  #hamburger {
+    visibility: hidden;
+    display: none;
   }
 }
 @media (min-width: 0rem) and (max-width: 37.4375rem) {
@@ -209,30 +218,32 @@ table {
     cursor: pointer;
     z-index: 20;
   }
+  #hamburger .line-1 {
+    top: 0;
+  }
+  #hamburger .line-2 {
+    top: 8px;
+  }
+  #hamburger .line-3 {
+    top: 16px;
+  }
   #hamburger [class^=line-] {
-    background-color: #FFAD6E;
+    background-color: #ffad6e;
     width: 100%;
     height: 2px;
     position: absolute;
     transition: transform 0.5s ease;
   }
-  #hamburger .line-1 {
-    top: 0;
-  }
-  #hamburger .line-3 {
-    top: 8px;
-    width: 80%;
-    right: 0;
-  }
   #hamburger.open .line-1 {
     transform: rotate(45deg);
     transform-origin: 0 0;
   }
+  #hamburger.open .line-2 {
+    display: none;
+  }
   #hamburger.open .line-3 {
     transform: rotate(-45deg) translate(11px, 5px);
     transform-origin: 0px 18px;
-    top: 16px;
-    width: 100%;
   }
   #hamburger.open + ul {
     transform: translateX(0%);
@@ -241,6 +252,29 @@ table {
   #hamburger.closed + ul {
     transform: translateX(100%);
     transition: transform 0.6s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  }
+}
+@media (min-width: 37.5rem) {
+  #mainnav ul {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: flex-end;
+    flex-direction: row;
+    gap: 1.5rem;
+    padding: 1rem;
+  }
+  #mainnav ul a {
+    text-align: left;
+    font: normal normal 600 22px/28px Source Sans Pro;
+    letter-spacing: 0.33px;
+    color: #ffad6e;
+    text-transform: uppercase;
+    opacity: 1;
+    list-style-type: none;
+    text-decoration: underline;
+  }
+  #mainnav ul a:hover {
+    cursor: pointer;
   }
 }
 @media (min-width: 0rem) and (max-width: 37.4375rem) {
@@ -280,37 +314,80 @@ table {
     text-decoration: underline;
   }
 }
-footer {
-  height: min-content;
-  box-sizing: border-box;
-  padding: 1rem 1rem 2rem 2rem;
-  background: #363636 0% 0% no-repeat padding-box;
-  border: 1px solid #000000;
-  opacity: 1;
+@media (min-width: 37.5rem) {
+  footer {
+    height: min-content;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 1rem 1rem 2rem 2rem;
+    background: #363636 0% 0% no-repeat padding-box;
+    border: 1px solid #000000;
+    opacity: 1;
+  }
+  footer h4 {
+    text-align: left;
+    font: normal normal 300 38px/47px Source Sans Pro;
+    letter-spacing: 0px;
+    color: #ffffff;
+    opacity: 1;
+  }
+  footer p {
+    text-align: left;
+    font: normal normal 300 22px/28px Source Sans Pro;
+    letter-spacing: 0px;
+    color: #ffffff;
+    opacity: 1;
+  }
+  footer a {
+    text-align: left;
+    font: normal normal 300 22px/28px Source Sans Pro;
+    letter-spacing: 0px;
+    color: #ffad6e;
+    opacity: 1;
+    text-decoration: none;
+  }
+  footer #sources {
+    display: none;
+  }
 }
-footer h4 {
-  text-align: left;
-  font: normal normal 300 22px/28px Source Sans Pro;
-  letter-spacing: 0px;
-  color: #ffffff;
-  opacity: 1;
+@media (min-width: 0rem) and (max-width: 37.4375rem) {
+  footer {
+    height: min-content;
+    box-sizing: border-box;
+    padding: 1rem 1rem 2rem 2rem;
+    background: #363636 0% 0% no-repeat padding-box;
+    border: 1px solid #000000;
+    opacity: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  footer h4 {
+    text-align: left;
+    font: normal normal 300 22px/28px Source Sans Pro;
+    letter-spacing: 0px;
+    color: #ffffff;
+    opacity: 1;
+  }
+  footer p {
+    text-align: left;
+    font: normal normal 300 16px/20px Source Sans Pro;
+    letter-spacing: 0px;
+    color: #ffffff;
+    opacity: 1;
+  }
+  footer a {
+    text-align: left;
+    font: normal normal 300 16px/20px Source Sans Pro;
+    letter-spacing: 0px;
+    color: #ffad6e;
+    opacity: 1;
+    text-decoration: none;
+  }
+  footer #sources {
+    display: none;
+  }
 }
-footer p {
-  text-align: left;
-  font: normal normal 300 16px/20px Source Sans Pro;
-  letter-spacing: 0px;
-  color: #ffffff;
-  opacity: 1;
-}
-footer a {
-  text-align: left;
-  font: normal normal 300 16px/20px Source Sans Pro;
-  letter-spacing: 0px;
-  color: #ffad6e;
-  opacity: 1;
-  text-decoration: none;
-}
-
 @media (min-width: 0rem) and (max-width: 37.4375rem) {
   #about {
     background: #fff7f2 0% 0% no-repeat padding-box;
@@ -353,7 +430,8 @@ footer a {
   #about {
     display: flex;
     flex-direction: row;
-    padding: 0 2rem;
+    background: #fff7f2 0% 0% no-repeat padding-box;
+    padding: 7rem 2rem 10rem;
   }
   #about img {
     height: auto;
@@ -384,24 +462,51 @@ footer a {
     width: fit-content;
   }
 }
+@media (min-width: 37.5rem) {
+  #news {
+    padding: 0 2rem;
+    margin-bottom: 10rem;
+  }
+  #news .articles {
+    display: flex;
+    column-gap: 2rem;
+  }
+  #news article {
+    width: 33.3333333333%;
+    background: #f7f7f7 0% 0% no-repeat padding-box;
+    padding-bottom: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  #news article h3 {
+    font: normal normal 300 38px/47px Source Sans Pro;
+    color: #d5874c;
+    padding: 1rem;
+  }
+  #news article img {
+    width: 100%;
+    height: auto;
+  }
+  #news article #text_news {
+    text-align: left;
+    font: normal normal 300 22px/37px Source Sans Pro;
+    color: #363636;
+    padding: 2rem;
+  }
+  #news article a {
+    margin: 1rem 2rem;
+    width: 157px;
+    height: 41px;
+    border: 1px solid #f4a76c;
+    text-transform: uppercase;
+    font: normal normal 600 22px/28px Source Sans Pro;
+    padding: 0.5rem 1rem;
+  }
+}
 @media (min-width: 0rem) and (max-width: 37.4375rem) {
   #news .articles {
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-  #news .super-headline {
-    font: normal normal 600 16px/20px Source Sans Pro;
-    color: #363636;
-    text-transform: uppercase;
-    margin-left: 1rem;
-  }
-  #news h2 {
-    font: normal normal 300 28px/36px Source Sans Pro;
-    letter-spacing: 0px;
-    color: #d5874c;
-    margin-left: 1rem;
-    margin-bottom: 1rem;
   }
   #news article {
     width: 95%;
@@ -435,6 +540,61 @@ footer a {
     padding: 0.5rem 1rem;
   }
 }
+@media (min-width: 37.5rem) {
+  header {
+    font-family: "Source Sans Pro", sans-serif;
+    background-image: url("../../images/aaron_5.jpg");
+    background-size: 100vw;
+    background-repeat: no-repeat;
+    height: 100vh;
+    padding: 1rem;
+    position: relative;
+  }
+  header img {
+    width: 100%;
+  }
+  header .flex {
+    display: flex;
+    justify-content: space-between;
+  }
+  header #aaronLogoLink {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: 0.33px;
+    padding: 1rem;
+  }
+  header #aaronLogoLink span {
+    font-weight: 300;
+    text-transform: capitalize;
+  }
+  header #heroText {
+    color: #d5874c;
+    font-size: 68px;
+    font-weight: 300;
+    position: absolute;
+    left: 10%;
+    top: 33%;
+  }
+  header #heroText h2 {
+    margin-bottom: 2rem;
+  }
+  header #heroText br {
+    display: none;
+  }
+  header #heroText a {
+    padding: 1rem 2rem;
+    color: white;
+    border: 1px solid #f4a76c;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+  }
+}
 @media (min-width: 0rem) and (max-width: 37.4375rem) {
   header {
     font-family: "Source Sans Pro", sans-serif;
@@ -459,7 +619,7 @@ footer a {
     text-transform: capitalize;
   }
   header #heroText {
-    color: #D5874C;
+    color: #d5874c;
     font-size: 38px;
     font-weight: 300;
     position: absolute;
@@ -472,7 +632,7 @@ footer a {
   header #heroText a {
     padding: 0.5rem 1.5rem;
     color: white;
-    border: 1px solid #F4A76C;
+    border: 1px solid #f4a76c;
     text-decoration: none;
     font-size: 16px;
     font-weight: 600;

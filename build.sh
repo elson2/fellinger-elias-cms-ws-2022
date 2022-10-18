@@ -6,4 +6,3 @@ cp -R ./src/images ./dist/
 cp -R ./src/fonts ./dist/fonts
 npx esbuild ./src/js/main.js --bundle --outfile=./dist/main.js  --minify
 
-exit 0

@@ -6,38 +6,38 @@
 }
 
 @include breakpoint(0, $mobile) {
-  .super-headline{
-    font-size: 16px;
-    font-weight: 600;
-    color: #363636;
-  }
-  .super-headline + h2{
-    font-size: 28px;
-    font-weight: 300;
-    color: #D5874C;
-  }
-  .super-headline, .super-headline + h2{
-    margin-left: 1rem;
-  }
-  
-  section{
-    margin-top: 3.8rem;
-  }
+	.super-headline {
+		font-size: 16px;
+		font-weight: 600;
+		color: #363636;
+	}
+	.super-headline + h2 {
+		font-size: 28px;
+		font-weight: 300;
+		color: #d5874c;
+	}
+	.super-headline,
+	.super-headline + h2 {
+		margin-left: 1rem;
+	}
+
+	section {
+		margin-top: 3.8rem;
+	}
 }
 
 @include breakpoint($desktop) {
-  .super-headline{
-    font-size: 22px;
-    font-weight: 600;
-    color: #363636;
-  }
-  .super-headline + h2{
-    font-size: 68px;
-    font-weight: 200;
-    color: #D5874C;
-  }
-  section{
-    margin-top: 15rem;
-  }
+	.super-headline {
+		font-size: 22px;
+		font-weight: 600;
+		color: #363636;
+	}
+	.super-headline + h2 {
+		font-size: 68px;
+		font-weight: 200;
+		color: #d5874c;
+	}
+	section {
+		margin-top: 5rem;
+	}
 }
-
