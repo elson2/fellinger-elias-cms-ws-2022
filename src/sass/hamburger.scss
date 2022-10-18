@@ -1,6 +1,8 @@
-#hamburger {
-	visibility: hidden;
-	display: none;
+@include breakpoint($desktop) {
+	#hamburger {
+		visibility: hidden;
+		display: none;
+	}
 }
 
 @include breakpoint(0, $mobile) {

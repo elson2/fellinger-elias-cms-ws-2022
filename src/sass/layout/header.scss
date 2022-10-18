@@ -1,59 +1,61 @@
-header {
-	font-family: "Source Sans Pro", sans-serif;
-	background-image: url("../../images/aaron_5.jpg");
-	// background-position: -310px 0px;
-	background-size: 100vw;
-	background-repeat: no-repeat;
-	height: 896px;
-	padding: 1rem;
-	position: relative;
-
-	img {
-		width: 100%;
-	}
-
-	.flex {
-		display: flex;
-		justify-content: space-between;
-	}
-
-	#aaronLogoLink {
-		text-decoration: none;
-		text-transform: uppercase;
-		color: white;
-		font-size: 22px;
-		font-weight: 600;
-		letter-spacing: 0.33px;
+@include breakpoint($desktop) {
+	header {
+		font-family: "Source Sans Pro", sans-serif;
+		background-image: url("../../images/aaron_5.jpg");
+		// background-position: -310px 0px;
+		background-size: 100vw;
+		background-repeat: no-repeat;
+		height: 896px;
 		padding: 1rem;
+		position: relative;
 
-		span {
-			font-weight: 300;
-			text-transform: capitalize;
+		img {
+			width: 100%;
 		}
-	}
 
-	#heroText {
-		color: #d5874c;
-		font-size: 68px;
-		font-weight: 300;
-		position: absolute;
-		left: 10%;
-		bottom: 60%;
-		h2 {
-			margin-bottom: 2rem;
+		.flex {
+			display: flex;
+			justify-content: space-between;
 		}
-		br {
-			display: none;
-		}
-		a {
-			padding: 1rem 2rem;
-			color: white;
-			border: 1px solid #f4a76c;
+
+		#aaronLogoLink {
 			text-decoration: none;
-			font-size: 24px;
-			font-weight: 600;
 			text-transform: uppercase;
-			letter-spacing: 1.5px;
+			color: white;
+			font-size: 22px;
+			font-weight: 600;
+			letter-spacing: 0.33px;
+			padding: 1rem;
+
+			span {
+				font-weight: 300;
+				text-transform: capitalize;
+			}
+		}
+
+		#heroText {
+			color: #d5874c;
+			font-size: 68px;
+			font-weight: 300;
+			position: absolute;
+			left: 10%;
+			bottom: 60%;
+			h2 {
+				margin-bottom: 2rem;
+			}
+			br {
+				display: none;
+			}
+			a {
+				padding: 1rem 2rem;
+				color: white;
+				border: 1px solid #f4a76c;
+				text-decoration: none;
+				font-size: 24px;
+				font-weight: 600;
+				text-transform: uppercase;
+				letter-spacing: 1.5px;
+			}
 		}
 	}
 }
