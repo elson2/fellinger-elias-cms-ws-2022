@@ -1,6 +1,8 @@
-*, *:after, *:before {
-  box-sizing: border-box;
-  font-family: 'Source Sans Pro', sans-serif;
+*,
+*:after,
+*:before {
+	box-sizing: border-box;
+	font-family: "Source Sans Pro", sans-serif;
 }
 
 @include breakpoint(0, $mobile) {
@@ -38,3 +40,4 @@
     margin-top: 15rem;
   }
 }
+
