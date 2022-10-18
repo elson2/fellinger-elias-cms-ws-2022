@@ -19,7 +19,7 @@
 			color: #d5874c;
 			margin-left: 1rem;
 		}
-		#text_about {
+		.text_about {
 			font: normal normal 300 16px/29px Source Sans Pro;
 			color: #363636;
 			margin-left: 1rem;
@@ -34,5 +34,42 @@
 			font: normal normal 900 16px/29px Source Sans Pro;
 			padding: 0.5rem 1rem;
 		}
+	}
+}
+
+@include breakpoint($desktop) {
+	#about{
+		display: flex;
+		flex-direction: row;
+		padding: 0 2rem;
+		img {
+			height: auto;
+			object-fit: cover;
+		}
+		div{
+			padding: 0 10rem 0 2rem;
+			height: fit-content;
+			display: flex;
+			flex-direction: column;
+			.text_about {
+				font-size: 22px;
+				font-weight: 300;
+				color: #363636;
+				padding-bottom: 1rem;
+				line-height: 1.5;
+				max-width: 70ch;
+			}
+			a {
+				margin-top: 1rem;
+				padding: .8rem 1.5rem;
+				border: 1px solid #f4a76c;
+				text-decoration: none;
+				font-size: 22px;
+				font-weight: 600;
+				text-transform: uppercase;
+				width: fit-content;
+			}			
+		}
+		
 	}
 }
