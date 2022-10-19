@@ -481,6 +481,9 @@ table {
     font: normal normal 300 38px/47px Source Sans Pro;
     color: #d5874c;
     padding: 1rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
   #news article img {
     width: 100%;
