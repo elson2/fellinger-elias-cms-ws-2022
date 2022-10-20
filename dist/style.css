@@ -170,11 +170,13 @@ table {
     font-size: 16px;
     font-weight: 600;
     color: #363636;
+    text-transform: uppercase;
   }
   .super-headline + h2 {
     font-size: 28px;
     font-weight: 300;
     color: #d5874c;
+    margin-bottom: 3rem;
   }
   .super-headline,
 .super-headline + h2 {
@@ -189,11 +191,13 @@ table {
     font-size: 22px;
     font-weight: 600;
     color: #363636;
+    text-transform: uppercase;
   }
   .super-headline + h2 {
     font-size: 68px;
     font-weight: 200;
     color: #d5874c;
+    margin-bottom: 3rem;
   }
   section {
     margin-top: 5rem;
@@ -218,15 +222,6 @@ table {
     cursor: pointer;
     z-index: 20;
   }
-  #hamburger .line-1 {
-    top: 0;
-  }
-  #hamburger .line-2 {
-    top: 8px;
-  }
-  #hamburger .line-3 {
-    top: 16px;
-  }
   #hamburger [class^=line-] {
     background-color: #ffad6e;
     width: 100%;
@@ -234,16 +229,23 @@ table {
     position: absolute;
     transition: transform 0.5s ease;
   }
+  #hamburger .line-1 {
+    top: 0;
+  }
+  #hamburger .line-3 {
+    top: 8px;
+    width: 80%;
+    right: 0;
+  }
   #hamburger.open .line-1 {
     transform: rotate(45deg);
     transform-origin: 0 0;
   }
-  #hamburger.open .line-2 {
-    display: none;
-  }
   #hamburger.open .line-3 {
     transform: rotate(-45deg) translate(11px, 5px);
     transform-origin: 0px 18px;
+    top: 16px;
+    width: 100%;
   }
   #hamburger.open + ul {
     transform: translateX(0%);
@@ -271,7 +273,8 @@ table {
     text-transform: uppercase;
     opacity: 1;
     list-style-type: none;
-    text-decoration: underline;
+    text-decoration: none;
+    border-bottom: #ffad6e 1px solid;
   }
   #mainnav ul a:hover {
     cursor: pointer;
@@ -432,6 +435,7 @@ table {
     flex-direction: row;
     background: #fff7f2 0% 0% no-repeat padding-box;
     padding: 7rem 2rem 10rem;
+    margin-bottom: 10rem;
   }
   #about img {
     height: auto;
@@ -489,7 +493,7 @@ table {
     width: 100%;
     height: auto;
   }
-  #news article #text_news {
+  #news article .text_news {
     text-align: left;
     font: normal normal 300 22px/37px Source Sans Pro;
     color: #363636;
@@ -502,7 +506,7 @@ table {
     border: 1px solid #f4a76c;
     text-transform: uppercase;
     font: normal normal 600 22px/28px Source Sans Pro;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 1.5rem;
   }
 }
 @media (min-width: 0rem) and (max-width: 37.4375rem) {
@@ -525,7 +529,7 @@ table {
   #news article img {
     width: 100%;
   }
-  #news article #text_news {
+  #news article .text_news {
     text-align: left;
     font: normal normal 300 16px/29px Source Sans Pro;
     letter-spacing: 0px;
@@ -540,16 +544,16 @@ table {
     border: 1px solid #f4a76c;
     text-transform: uppercase;
     font: normal normal 900 16px/29px Source Sans Pro;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 1.5rem;
   }
 }
 @media (min-width: 37.5rem) {
   header {
     font-family: "Source Sans Pro", sans-serif;
     background-image: url("../../images/aaron_5.jpg");
-    background-size: 100vw;
+    background-size: cover;
     background-repeat: no-repeat;
-    height: 100vh;
+    height: 90vh;
     padding: 1rem;
     position: relative;
   }
