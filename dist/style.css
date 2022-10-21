@@ -228,6 +228,7 @@ table {
     height: 2px;
     position: absolute;
     transition: transform 0.5s ease;
+    display: block;
   }
   #hamburger .line-1 {
     top: 0;
