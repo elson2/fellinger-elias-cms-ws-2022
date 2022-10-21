@@ -136,6 +136,7 @@
                 display: grid;
                 grid-template-columns: repeat(5, 1fr);
                 grid-template-rows: 1fr;
+                height: $levelHeight;
 
                 .level-text, .quote-container, .icon-circle{
                     background-color: $level-bg-color;
@@ -220,7 +221,8 @@
                     align-items: center;
                     font-size: 38px;
                     font-weight: 200;
-                    padding: 4rem;
+                    padding: 2rem;
+                    margin-left: $levelGap;
                 }
             }
 
@@ -236,6 +238,7 @@
                 .apply{
                     grid-column: 5/6;
                     grid-row: 1;
+                    background-color: #F7F7F7;
                 }
                 .quote-container{
                     padding-right: 0;
@@ -266,10 +269,6 @@
                         transform: translate(-80%, -55%);
                     }
                 }
-                .apply{
-                    grid-column: 5/6;
-                    grid-row: 1;
-                }
                 .quote-container{
                     padding-top: 0;
                     grid-column: 1/2;
@@ -282,10 +281,10 @@
                     }
                 }
                 .apply{
+                    background-color: #F7F7F7;
+                    height: calc($levelHeight * 2 + $levelGap);
+                    grid-column: 5/6;
                     position: absolute;
-                    grid-row: 2/4;
-                    height: fit-content;
-                    transform: translateY(calc(-50% + $levelGap / 2));
                 }
             }
             #level-3{
