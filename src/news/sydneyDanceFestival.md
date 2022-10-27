@@ -3,8 +3,8 @@ title: Sydney Dance Festival 2022
 excerpt: Sydney Dance Festival 2022 is happening!!!
 date: 2022-10-06
 tags: news
-layout: primary
-image: dance_festival_performance.jpeg
+layout: news
+image: images/aaron_3.jpg
 alt: Aaron performing at the Sydney dance festival 2022
 ---
 

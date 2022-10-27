@@ -1,11 +1,11 @@
 ---
-title: "Dance Pool" 2023 sold out!
+title: Dance Pool 2023 sold out!
 excerpt: The Dance Pool is completely sold out! Thank YOU!
 date: 2022-10-06
 tags: news
-layout: primary
-image: dance_pool_group_pic.jpeg
-alt: Group picture of 'Dance Pool'
+layout: news
+image: images/dance_group.jpg
+alt: Group picture of Dance Pool
 ---
 
 Lorem ipsum dolor sit amet, consetetur sadipscing elitr,

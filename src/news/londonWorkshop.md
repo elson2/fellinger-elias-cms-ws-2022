@@ -3,8 +3,8 @@ title: New London Workshop Oct. 2025
 excerpt: Bringing a new Workshop to London!! Coming in 2025
 date: 2022-10-06
 tags: news
-layout: primary
-image: workshop_snapshot.jpeg
+layout: news
+image: images/aaron_4.jpg
 alt: Aaron at a workshop
 ---
 

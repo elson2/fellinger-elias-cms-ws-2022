@@ -476,6 +476,11 @@ table {
     display: flex;
     column-gap: 2rem;
   }
+  #news a {
+    text-transform: none;
+    text-decoration: none;
+    color: #000;
+  }
   #news article {
     width: 33.3333333333%;
     background: #f7f7f7 0% 0% no-repeat padding-box;
@@ -492,7 +497,8 @@ table {
   }
   #news article img {
     width: 100%;
-    height: auto;
+    height: 50%;
+    object-fit: cover;
   }
   #news article .text_news {
     text-align: left;
@@ -500,7 +506,7 @@ table {
     color: #363636;
     padding: 2rem;
   }
-  #news article a {
+  #news article .button {
     margin: 1rem 2rem;
     width: 157px;
     height: 41px;
@@ -515,6 +521,11 @@ table {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+  #news a {
+    text-transform: none;
+    text-decoration: none;
+    color: #000;
   }
   #news article {
     width: 95%;
@@ -538,7 +549,7 @@ table {
     opacity: 1;
     padding: 1rem;
   }
-  #news article a {
+  #news article .button {
     margin: 1rem;
     width: 157px;
     height: 41px;
@@ -935,6 +946,56 @@ table {
   }
   #workshops #level-grid #level-3 .apply {
     display: none;
+  }
+}
+@media (min-width: 37.5rem) {
+  #full_news {
+    padding: 2rem;
+  }
+  #full_news #news_heading {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 2rem 2rem;
+  }
+  #full_news #news_heading h2 {
+    font: normal normal 300 38px/47px Source Sans Pro;
+    color: #d5874c;
+  }
+  #full_news #news_heading p {
+    font: normal normal 300 22px/37px Source Sans Pro;
+    color: #363636;
+    font-style: italic;
+  }
+  #full_news #news_content p {
+    text-align: left;
+    font: normal normal 300 22px/37px Source Sans Pro;
+    color: #363636;
+    padding: 0 2rem 2rem 2rem;
+  }
+}
+@media (min-width: 0rem) and (max-width: 37.4375rem) {
+  #full_news {
+    padding: 2rem;
+  }
+  #full_news #news_heading {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 2rem 2rem;
+  }
+  #full_news #news_heading h2 {
+    font: normal normal 300 38px/47px Source Sans Pro;
+    color: #d5874c;
+  }
+  #full_news #news_heading p {
+    font: normal normal 300 22px/37px Source Sans Pro;
+    color: #363636;
+    font-style: italic;
+  }
+  #full_news #news_content p {
+    text-align: left;
+    font: normal normal 300 22px/37px Source Sans Pro;
+    color: #363636;
+    padding: 0 2rem 2rem 2rem;
   }
 }
 

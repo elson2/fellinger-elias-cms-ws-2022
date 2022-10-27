@@ -2,10 +2,15 @@
 layout: primary
 ---
 
-<h2>{{ title }}</h2>
-<p>
-  <i>Written: {{ date | date: "%b %d, %Y"}}</i>
-</p>
+<div id="full_news">
+  <div id="news_heading">
+    <h2>{{ title }}</h2>
+    <p>
+      <i>Written: {{ date | date: "%b %d, %Y"}}</i>
+    </p>
+  </div>
 
-
-{{ content }}
+  <div id="news_content">
+    {{ content }}
+  </div>
+</div>

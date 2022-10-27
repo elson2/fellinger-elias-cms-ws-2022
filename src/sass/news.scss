@@ -6,6 +6,11 @@
 			display: flex;
 			column-gap: 2rem;
 		}
+		a {
+			text-transform: none;
+			text-decoration: none;
+			color: #000;
+		}
 		article {
 			width: calc(100% / 3);
 			background: #f7f7f7 0% 0% no-repeat padding-box;
@@ -22,7 +27,8 @@
 			}
 			img {
 				width: 100%;
-				height: auto;
+				height: 50%;
+				object-fit: cover;
 			}
 			.text_news {
 				text-align: left;
@@ -30,7 +36,7 @@
 				color: #363636;
 				padding: 2rem;
 			}
-			a {
+			.button {
 				margin: 1rem 2rem;
 				width: 157px;
 				height: 41px;
@@ -50,7 +56,11 @@
 			flex-direction: column;
 			align-items: center;
 		}
-
+		a {
+			text-transform: none;
+			text-decoration: none;
+			color: #000;
+		}
 		article {
 			width: 95%;
 			background: #f7f7f7 0% 0% no-repeat padding-box;
@@ -73,7 +83,7 @@
 				opacity: 1;
 				padding: 1rem;
 			}
-			a {
+			.button {
 				margin: 1rem;
 				width: 157px;
 				height: 41px;
